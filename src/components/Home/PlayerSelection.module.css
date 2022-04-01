@@ -1,0 +1,39 @@
+.container {
+  background-color: var(--clr-semi-dark-navy);
+  padding: 1.7143em;
+  width: 100%;
+  text-align: center;
+  box-shadow: inset 0px -8px 0px #10212a;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--clr-silver);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  text-transform: uppercase;
+  color: var(--clr-silver);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 0.0546875rem;
+  margin-bottom: 0.375rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    margin-bottom: 1.5rem;
+  }
+}

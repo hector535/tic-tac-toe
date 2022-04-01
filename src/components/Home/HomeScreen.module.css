@@ -1,0 +1,84 @@
+.home-screen {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 327px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.btn {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.0625rem;
+  width: 100%;
+  padding: 1.125em 0;
+  margin-bottom: 1rem;
+}
+
+.btn:last-child {
+  margin-bottom: 0;
+}
+
+.btn--yellow {
+  background-color: var(--clr-light-yellow);
+  box-shadow: inset 0px -8px 0px #cc8b13;
+}
+
+/*LVHA En este caso el L que significa Link no aplica por que
+esto es un boton*/
+.btn--yellow:hover,
+.btn--yellow:active {
+  background-color: var(--clr-light-yellow-hover);
+}
+
+/*LVHA En este caso el L que significa Link no aplica por que
+esto es un boton*/
+.btn--blue {
+  background-color: var(--clr-light-blue);
+  box-shadow: inset 0px -8px 0px #118c87;
+}
+
+.btn--blue:hover,
+.btn--blue:active {
+  background-color: var(--clr-light-blue-hover);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 460px;
+  }
+
+  .logo {
+    margin-bottom: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.078125rem;
+    padding: 0.85em 0;
+    padding-bottom: 1.25em;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn:last-child {
+    margin-bottom: 0;
+  }
+}

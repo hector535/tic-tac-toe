@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --clr-light-blue: hsl(178, 60%, 48%);
+  --clr-light-blue-hover: hsl(178, 75%, 65%);
+  --clr-light-yellow: hsl(39, 88%, 58%);
+  --clr-light-yellow-hover: hsl(39, 100%, 69%);
+  --clr-dark-navy: hsl(202, 32%, 15%);
+  --clr-semi-dark-navy: hsl(199, 35%, 19%);
+  --clr-silver: hsl(198, 23%, 72%);
+  --clr-silver-hover: hsl(197, 33%, 89%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  font-kerning: 0.05rem;
+}
+
+/*
+Tablet
+Home screen
+	Titulo 16px
+	sub-titulo 14px
+	botones 20px
+
+Tablero
+	Encabezado 16px
+	Footer-Titulo 14px
+	Footer-Contenido 24px
+
+Modal
+	titulo 16px
+	Subtitulo 40px
+	botones 16px
+*/

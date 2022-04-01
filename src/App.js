@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import GameContext from "./store/game-context";
+
+import HomeScreen from "./components/Home/HomeScreen";
+import GameScreen from "./components/Game/GameScreen";
+import classes from "./App.module.css";
 
 function App() {
+  const { mode } = useContext(GameContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={classes["main"]}>
+      {!mode && <HomeScreen />}
+      {mode && <GameScreen />}
+    </main>
   );
 }
 
